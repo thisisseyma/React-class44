@@ -4,7 +4,9 @@ const Categories = ({
   selectedCategory,
 }) => {
   const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
+    category === selectedCategory
+      ? setSelectedCategory(null)
+      : setSelectedCategory(category);
   };
 
   return (
