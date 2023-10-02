@@ -3,7 +3,7 @@ import Categories from "./components/Categories.js";
 import Products from "./components/Products.js";
 import ProductDetail from "./components/ProductDetail";
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -25,14 +25,7 @@ function App() {
               </>
             }
           />
-          <Route
-            path="/product/:id"
-            element={
-              <>
-                <ProductDetail />
-              </>
-            }
-          />
+          <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </div>
     </Router>

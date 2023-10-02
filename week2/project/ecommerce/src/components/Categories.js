@@ -34,7 +34,7 @@ const Categories = ({ setSelectedCategory, selectedCategory }) => {
   }
 
   if (error) {
-    return <p>Error: {error.message}</p>;
+    return <p>Something went wrong. Please try again later.</p>;
   }
 
   return (
